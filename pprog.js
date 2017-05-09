@@ -127,7 +127,7 @@ repeat(goodbye, 5);
 ////////////////////////////////////////////////////////////
 
 // Return only names that begin with 'R'
-var filter = /*function*/(arr,fn)=> arr.filter((i)=> fn(i));
+//var filter = /*function*/(arr,fn)=> arr.filter((i)=> fn(i));
 const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 
 const filteredNames = filter(myNames, function(name) {
