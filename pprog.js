@@ -135,11 +135,7 @@ const filteredNames = filter(myNames, function(name) {
     return name[0] === 'R';
 });
 
-// const filteredNames = filter(myNames, function(name) {
-//     // This is a "predicate function" - it's a function that only returns a boolean
-//     return name[0] === 'R';
-// });
-const filteredNames = filter (myNames,name=> name[0]==='R');
+//const filteredNames = filter (myNames,name=> name[0]==='R');
 
 //   filter (,(myNames,name)=>name[0]==='R'); Wrong
 //   filter(myNames,function(fn){name[0]==='R'}) Wrong
