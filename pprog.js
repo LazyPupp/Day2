@@ -50,3 +50,47 @@ function min(myNumbers){
 arr = [1,2,-20,100];
 console.log(max(arr)); //=> 100
 console.log(min(arr)); //=> -20
+
+function fizzBuzz(countTo){
+	for(let i = 1; i <= countTo;i++){
+		switch(i%15){
+			case 0:
+				console.log("fizzbuzz");
+				break;
+			default:
+				switch(i%5){
+					case 0: 
+						console.log("buzz");
+						break;
+					default:
+						switch(i%3){
+							case 0:
+								console.log("fizz");
+								break;
+							default:
+								console.log(i);
+						}
+				}
+
+		}
+	}
+}
+
+function fizzBuzz(countTo){
+	for(let i = 1; i <= countTo; i++){
+		switch(true){
+			case (i%15===0):
+				console.log("fizzbuzz");
+				break;
+			case (i%5 ===0):
+				console.log("buzz");
+				break;
+			case (i%3===0):
+				console.log("fizz");
+				break;
+			default:
+				console.log(i);
+		}
+	}
+}
+fizzBuzz(15);
