@@ -33,8 +33,8 @@ function max(myNumbers){
     let i = 0;
     while(i<myNumbers.length){
         if(myNumbers[i]> a){
-        a = myNumbers[i];
-    }
+            a = myNumbers[i];
+        }
         i++;
     }
     return a;
@@ -45,8 +45,8 @@ function min(myNumbers){
     let i =0;
     while(i<myNumbers.length){
         if(myNumbers[i]< a){
-        a = myNumbers[i];
-    }
+            a = myNumbers[i];
+        }
         i++;
     }
     return a;
@@ -62,43 +62,43 @@ console.log(min(arr)); //=> -20
 function fizzBuzz(countTo){
     for(let i = 1; i <= countTo;i++){
         switch(i%15){
-    case 0:
-        console.log('fizzbuzz');
-        break;
-    default:
-        switch(i%5){
-    case 0: 
-        console.log('buzz');
-        break;
-    default:
-        switch(i%3){
-    case 0:
-        console.log('fizz');
-        break;
-    default:
-        console.log(i);
-    }
-    }
+        case 0:
+            console.log('fizzbuzz');
+            break;
+        default:
+            switch(i%5){
+            case 0: 
+                console.log('buzz');
+                break;
+            default:
+                switch(i%3){
+                case 0:
+                    console.log('fizz');
+                    break;
+                default:
+                    console.log(i);
+                }
+            }
 
-    }
+        }
     }
 }
 
 function fizzBuzz(countTo){
     for(let i = 1; i <= countTo; i++){
         switch(true){
-    case (i%15===0):
-        console.log('fizzbuzz');
-        break;
-    case (i%5 ===0):
-        console.log('buzz');
-        break;
-    case (i%3===0):
-        console.log('fizz');
-        break;
-    default:
-        console.log(i);
-    }
+        case (i%15===0):
+            console.log('fizzbuzz');
+            break;
+        case (i%5 ===0):
+            console.log('buzz');
+            break;
+        case (i%3===0):
+            console.log('fizz');
+            break;
+        default:
+            console.log(i);
+        }
     }
 }
 fizzBuzz(15);
@@ -112,11 +112,11 @@ function repeat (fn,n){
     }
 }
 function hello(){
-	console.log("Hello world!");
+    console.log('Hello world!');
 
 }
 function goodbye(){
-	console.log("Goodbye world!");
+    console.log('Goodbye world!');
 }
 
 repeat(hello,5);
