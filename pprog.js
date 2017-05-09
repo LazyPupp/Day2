@@ -160,8 +160,8 @@ function filter(arr,fn) {
     } 
     return newArray;
 }
-
-var filter = (arr,fn)=> arr.forEach(str=>const newArray =[]; fn(str)?newArray.push(str):);
+//filter bonus question
+console.log(filter (myNames,name=> name[0]==='R'));
 
 //////////////////////////////HAZARD ALERT/////////////////////////////////////////////
 function hazardWarningCreator (typeOfWarning){
@@ -198,3 +198,26 @@ heatWarning('Tuscano, AZ');
 heatWarning('Burke, AZ');
 
 //Bonus credit! Can you figure out how to log out "time" for a value of 1 and "times" for a value of 0 or > 2?
+
+////////////////////////////////////////////////////////////
+///////////////          Turtle        ////////////////////
+////////////////////////////////////////////////////////////
+
+let arr = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+function turtle(array){
+
+    let filterArray = array.filter(function(pos){
+        return (pos[0] >= 0 && pos[1] >= 0);
+    });
+    console.log(filterArray);
+    let mapArray = filterArray.map(function(sum){
+        return sum[0]+sum[1];
+    });
+    console.log(mapArray);
+    mapArray.forEach(function(arr){
+        console.log(arr);
+    });
+    return mapArray;
+}
+console.log(turtle(arr));
